@@ -1,0 +1,18 @@
+<link rel="stylesheet" type="text/css" href="/styles/test.css?v=<%=sails.LIFT_TIME%>">
+<script type="text/javascript" src="/js/test.js?v=<%=sails.LIFT_TIME%>"></script>
+
+
+<div ms-controller="test">
+  <input type="text" :duplex="@a"><span :text="@a"></span>{{@a}}
+</div>
+
+<div ms-controller="comp-modal" class="aaa">
+  <button :click="@show()" style="margin-left:300px;width:100px;height:50px">显示</button>
+
+  <xmp ms-widget="[{is: 'ms-modal', id: 'modal1'}, @config]">
+    <div>content1</div>
+    <div>content22222</div>
+  </xmp>
+</div>
+
+

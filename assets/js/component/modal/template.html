@@ -1,0 +1,15 @@
+<div class="modal-mask" :visible="@isShow" >
+  <div class="modal-box">
+    <div class="modal-head">
+      <h2>{{@title}}</h2>
+      <span class="modal-close" :click="@cbProxy(false)">×</span>
+    </div>
+    <div class="modal-content">
+      <slot name="content"></slot>
+    </div>
+    <div class="modal-foot">
+      <button class="modal-btn btn-cancel" :click="@cbProxy(false)">取消</button>
+      <button class="modal-btn btn-ok" :click="@cbProxy(true)">确定</button>
+    </div>
+  </div>
+</div>

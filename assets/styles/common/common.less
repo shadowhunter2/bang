@@ -1,0 +1,86 @@
+h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form, img, body, p {
+  border-style: none;
+  border-color: inherit;
+  border-width: medium;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+* {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+.clearfix:after,
+.clearfix:before{
+  content:" ";display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+a,a:hover,a:visited,a:active{
+  text-decoration: none;
+}
+.border-radius(@radius){
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+.opacity(@value) {
+  filter: alpha(opacity=@value);
+  -moz-opacity: @value / 100;
+  opacity: @value / 100;
+}
+
+.box-sizing() {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.textddd(){
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1454295489_4312837.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1454295489_4312837.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1454295489_4312837.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1454295489_4312837.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1454295489_4312837.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1); }
+
+  50% {
+    -webkit-transform: rotate(180deg) scale(1);
+            transform: rotate(180deg) scale(1); }
+
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1); } }
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1); }
+
+  50% {
+    -webkit-transform: rotate(180deg) scale(1);
+            transform: rotate(180deg) scale(1); }
+
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1); }
+}
+
+.loading{
+
+}
