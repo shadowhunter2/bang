@@ -1,4 +1,3 @@
-# h5.kktv5.com
-
-a [Sails](http://sailsjs.org) application
-# bang
+1.cnpm install / npm install
+2.npm start
+3.localhost:3002/test
